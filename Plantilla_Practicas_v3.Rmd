@@ -377,4 +377,13 @@ colnames(Animals2)
 rownames(mammals)
 rownames(Animals2)
 
+
+commonAnimals <- intersect(rownames(mammals), rownames(Animals2))
+
+
+length(commonAnimals)  # 62 animales
+
+
+commonAnimals
+
 ```
