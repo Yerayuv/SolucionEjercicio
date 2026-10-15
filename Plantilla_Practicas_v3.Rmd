@@ -386,4 +386,17 @@ length(commonAnimals)  # 62 animales
 
 commonAnimals
 
+
+diff_A2_mammals <- setdiff(rownames(Animals2), rownames(mammals))
+diff_A2_mammals
+length(diff_A2_mammals)  # 7
+
+
+diff_mammals_A2 <- setdiff(rownames(mammals), rownames(Animals2))
+diff_mammals_A2
+length(diff_mammals_A2)  # 4
+
+#Hay claramente 4 animales que son los mismos pero estan escritos diferente.
+#Ademas, en animals hay 3 dinosaurios
+
 ```
