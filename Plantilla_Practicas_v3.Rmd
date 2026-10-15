@@ -347,7 +347,14 @@ En la figura \@ref(fig:newFig) se muestra un histograma de una distribución nor
 Compila el proyecto como **pdf** y como **html** y observa el fichero obtenido. Cuando generes el documento **html**, observa el efecto de cambiar el valor **theme** por algún otro. Ten en cuenta que este parámetro solo se puede usar la salida **html**.
 
 ```{r}
+library(MASS)
+library(robustbase)
 
+data(mammals)
+data(Animals2)
+
+?MASS::mammals
+?robustbase::Animals2
 
 
 ```
