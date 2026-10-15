@@ -356,5 +356,18 @@ data(Animals2)
 ?MASS::mammals
 ?robustbase::Animals2
 
+dim(mammals)   # 62 filas, 2 columnas
+dim(Animals2)  # 65 filas, 2 columnas
+
+
+head(mammals)
+tail(mammals)
+
+head(Animals2)
+tail(Animals2)
+
+
+str(mammals)
+str(Animals2)
 
 ```
