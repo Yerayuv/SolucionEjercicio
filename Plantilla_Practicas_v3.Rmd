@@ -370,4 +370,11 @@ tail(Animals2)
 str(mammals)
 str(Animals2)
 
+colnames(mammals)
+colnames(Animals2)
+
+
+rownames(mammals)
+rownames(Animals2)
+
 ```
