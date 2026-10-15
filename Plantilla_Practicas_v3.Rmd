@@ -346,7 +346,7 @@ En la figura \@ref(fig:newFig) se muestra un histograma de una distribución nor
 
 Compila el proyecto como **pdf** y como **html** y observa el fichero obtenido. Cuando generes el documento **html**, observa el efecto de cambiar el valor **theme** por algún otro. Ten en cuenta que este parámetro solo se puede usar la salida **html**.
 
-```{r}
+```{r, fig.width=7, fig.height=5}
 library(MASS)
 library(robustbase)
 
@@ -398,5 +398,21 @@ length(diff_mammals_A2)  # 4
 
 #Hay claramente 4 animales que son los mismos pero estan escritos diferente.
 #Ademas, en animals hay 3 dinosaurios
+
+Animals2[c("Brachiosaurus","Dipliodocus","Triceratops"), ]
+
+#A parte de ser reptiles, por los datos podemos calificar de outliers a estos 3, ya que su tamaño es mayor. Lo que es aun más llamativo es la relación entre masa y cerebro, en la que destacan aun más
+
+
+par(mfrow = c(1, 1))
+
+ratio <- Animals2$brain / Animals2$body
+dinos <- c("Dipliodocus", "Triceratops", "Brachiosaurus")
+
+
+plot(Animals2$body, ratio, log = "xy",
+     ylim = c(min(ratio) * 0.1, max(ratio) * 2),
+     xlab = "Masa corporal (kg)", ylab = "Ratio cerebro / cuerpo")
+
 
 ```
